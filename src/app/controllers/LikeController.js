@@ -18,7 +18,7 @@ class LikeController {
     // console.log('USER_LIKES', [userLiked.likes].map(i => i + 'a'));  
     // console.log('USERID', req.userId)
 
-    await Like.create()
+    await Like.create({ user_liked_id: 1 })
 
     return res.status(200).json({ 
       ok: true

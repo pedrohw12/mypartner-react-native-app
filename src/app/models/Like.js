@@ -6,8 +6,8 @@ class Like extends Model {
   static init(sequelize) {
     super.init(
       {
-        id: Sequelize.VIRTUAL,
-        user_likes_id: Sequelize.VIRTUAL,
+        // id: Sequelize.INTEGER,
+        user_liked_id: Sequelize.INTEGER,
       },
       {
         sequelize,
@@ -15,6 +15,10 @@ class Like extends Model {
     );
 
     return this;
+  }
+
+  static associate(models) {
+    this.belongsTo(models.User)
   }
 }
 
