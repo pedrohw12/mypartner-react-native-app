@@ -6,7 +6,6 @@ class Like extends Model {
   static init(sequelize) {
     super.init(
       {
-        // id: Sequelize.INTEGER,
         user_liked_id: Sequelize.INTEGER,
       },
       {
