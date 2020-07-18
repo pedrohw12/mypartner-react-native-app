@@ -1,0 +1,4 @@
+Dar like:
+
+1 - Ao clicar em like irá pegar o ID do usuário clicado (user_liked_id) e adicionar na tabela "likes"  [  ]
+2 - Verificar se no array de likes do usuário clicado contém o ID do usuário que clicou [  ]
